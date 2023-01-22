@@ -16,4 +16,4 @@ public class Platypus {
 }
 
 //In the code, there are two constructors. The first takes a String input to name the instance.
-//The second, taking no parameters, calls the first constructor by the default name "John/Mary Doe".
+//The second, taking no parameters, calls the first constructor by the default name "John/Mary Doe"
