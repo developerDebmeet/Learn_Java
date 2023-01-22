@@ -1,0 +1,11 @@
+The are four ways of defining the access permisions of a variable.
+If you don't put a keyword before the variable name,
+you are using the default access level modifier.
+
+- public allows access from anywhere else.
+- protected allows access from inside the package and the class' subclasses.
+- default modifier (blank) allows access only from inside the package.
+- private allows access only from inside the class.
+
+Protected and default are quite similar.
+(default is also known as package private)

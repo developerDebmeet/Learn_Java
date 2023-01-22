@@ -46,5 +46,17 @@ public class Variable {
 
         System.out.println(bb);
 
+        // Type promotion, b1,b2 lie in range of byte, but b1*b2 exceeds range, hence, its type is promoted.
+        byte b1 = 10;
+        byte b2 = 30;
+        int promoted = b1*b2;
+
+        // if we call add(5,6) and signature is add(int a, long b) -> this will work, since 6 gets promoted to long b, and there is no ambiguity
+        // if there are two methods, add(long a, int b) and add(int a, long b) -> this wont work, due to ambiguity 
+        // this is also type promotion
+
+        
+
+
     }
 }
