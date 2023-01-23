@@ -1,0 +1,3 @@
+Classes   : Human, ComputerLab Etc 
+Variables : sum, myComputer Etc
+Constants : INT_MAX, MAX_RETRIES, URL

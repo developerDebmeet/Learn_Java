@@ -26,6 +26,14 @@ public class Demo {
         // Since, in the heap, both these objects are created separately and 
         // calc1, calc2 refer to different location
         // In short, they are independent and different objects!
+
+        new Calculator(); // <- this is called ANONYMOUS OBJECT!
+        // when this is done, constructor is called and object is created
+        // but it is not really accessible, since object is in Heap with no
+        // refernce present in Stack of the main/calling function!
+
+        new Calculator().aMethod(0,"0");
+        // we can use anonymous objects to call its methods!
     }
 
 }
