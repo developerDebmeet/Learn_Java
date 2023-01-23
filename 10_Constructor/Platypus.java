@@ -1,21 +1,29 @@
-// This Keyword is quite different in Constructors!!
+// This Keyword in Constructors!!
 
-//Constructors use this to refer to another constructor in the same class 
+//Constructors use "this" to refer to another constructor in the same class 
 //with a different parameter list. 
 
 public class Platypus {
-       String name;
-       Platypus(String input) {
-               name = input;
-       }
-       Platypus() {
-               this("John/Mary Doe");
-       }
-       public static void main(String args[]) {
-               Platypus p1 = new Platypus("digger");
-               Platypus p2 = new Platypus();
-       }
-}
+        String name;
 
-//In the code, there are two constructors. The first takes a String input to name the instance.
-//The second, taking no parameters, calls the first constructor by the default name "John/Mary Doe"
+        Platypus() {
+                this("Debmeet"); //<- Use "this" keyword to call other constructors of same class!
+                System.out.println("platypus default");
+        }
+
+        Platypus(String s) {
+                System.out.println("platypus String s");
+        }
+
+        Platypus(int n) {
+                this(); // Calls the Default constructor of Platypus
+
+                System.out.println("platypus int n");
+        }
+
+        public static void main(String args[]) {
+
+                Platypus p1 = new Platypus(69);
+
+        }
+}

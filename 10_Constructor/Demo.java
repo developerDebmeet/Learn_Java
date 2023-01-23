@@ -17,6 +17,13 @@ class Human {
     }
 }
 
+
+class xyz extends Object {
+    // Every class in Java extends the object class and it need not be mentioned
+    // Explicitly. Below, we have not written but class A is extending Object class
+    // Calling super of A means calling constructor of Object class
+}
+
 class A {
     public A() {
         //super(); <-- Super is here as well, but no real affect
@@ -72,3 +79,11 @@ public class Demo {
 
     }
 }
+
+
+/*
+ * In Above example, B extends A, A extends Object;
+ * B does not extend Object. 
+ * This is Multi-Level Inheritance, and not Multiple Inheritance!!!
+ * 
+ */
