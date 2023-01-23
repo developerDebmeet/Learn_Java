@@ -1,5 +1,3 @@
-import javax.swing.event.SwingPropertyChangeSupport;
-
 class Human {
     private int age;
     private String name;
@@ -24,7 +22,7 @@ class xyz extends Object {
     // Calling super of A means calling constructor of Object class
 }
 
-class A {
+class A { // Parent/Base/Super Class
     public A() {
         //super(); <-- Super is here as well, but no real affect
         System.out.println("in A");
@@ -41,7 +39,7 @@ class A {
     }
 }
 
-class B extends A {
+class B extends A { // Child/Derived/Sub Class 
     public B() {
         super(); // <------------Mention super or not, it is always there!
         // this is why the default constructor of A is being called!
@@ -86,4 +84,30 @@ public class Demo {
  * B does not extend Object. 
  * This is Multi-Level Inheritance, and not Multiple Inheritance!!!
  * 
+ * Anyway Multiple Inheritance Does not exist in Java
+ * 
  */
+
+ class Calculator {
+    int amazingCalculation() {
+        return 0;
+    }
+ }
+
+ class ScientificCalculator extends Calculator {
+    @Override
+    int amazingCalculation() {
+        return -1;
+    }
+//  @Override annotation informs the compiler that the element is meant 
+//  to override an element declared in a superclass.
+
+//While it is not required to use this annotation when overriding a method, 
+//it helps to prevent errors. If a method marked with 
+//@Override fails to correctly override a method in one of its superclasses, the compiler generates an error.
+ }
+
+
+
+ // Inheritance creates an Is-A relationship between classes
+ // Example : ScientificCalculator IS A Calculator
