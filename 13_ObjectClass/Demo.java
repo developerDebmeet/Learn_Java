@@ -12,10 +12,17 @@ class BrandNewLaptop {
         return "Get the Brand new " + brand + " Laptop at Rupees : " + price + "/- only";
     }
 
+
+    // this is not overriding the equals of Object class. this is just another equals method, which takes precedence over the Object's equals method
     public boolean equals(BrandNewLaptop bnl) {
         return this.price == bnl.price && this.brand == bnl.brand;
     }
 
+    // When we override the equals method of Object class, it is compulsory to override the hashcode method as well.
+    // @Override 
+    // public boolean equals(Object o) {
+    //     return true;
+    // }
 }
 public class Demo {
     public static void main(String[] args) {
@@ -81,8 +88,8 @@ public class Demo {
   
          System.out.println(s1 == s2); // true
          System.out.println(s1 == s3); // false
-         System.out.println(s1.equals(s2)); // true
-         System.out.println(s1.equals(s3)); // true
+         System.out.println(s1.equals(s2)); // true 
+         System.out.println(s1.equals(s3)); // true  In String, equals just compares the string value.
 
          /*Both s1 and s2 refer to same objects.
            When we use the == operator for s1 and s2 comparison, the result is true as both have the same addresses in the string constant pool. 
