@@ -56,6 +56,13 @@ This is also known as UPCASTING.
 Java uses this fact to resolve calls to overridden methods at run time.
  */
 
+    A object = (A) new B(); //  UPcasting, same as A object = new B(); that (A) is understood by default and need not be written
+    object.show();
+
+    B object1 = (B) object; //  DOWNcasting
+    object1.show();
+
+
        
     }
 }
