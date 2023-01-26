@@ -1,0 +1,4 @@
+Error types
+1] Compile Time Errors
+2] Run Time Errors
+3] Logical Errors
