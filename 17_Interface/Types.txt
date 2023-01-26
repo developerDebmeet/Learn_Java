@@ -1,0 +1,18 @@
+Java has 3 types of interfaces : 
+1] Normal Interface
+2] Functional Interface OR SAM OR Single Abstract Method Interface
+3] Marker Interface
+
+Marker Interface is a blank Interface.
+interface MarkerInterface {
+
+}
+
+Marker interfaces are utilized in Serialization/Deserialization tasks
+
+eg If we are playing a game, it will have many objects of game classes in the RAM during play. We want to end today's game session, so we want to save the game state.
+Saving of the object's values to the HDD is known as Serialization. After Serialization, the objects in memory can be destoryed and the important saved data persists, eg High Score
+
+When starting the game some other day and loading the save file of the game, We can use the values saved to HDD earlier and create game objects back using that. This process is called
+Deserialization.
+
