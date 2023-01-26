@@ -9,13 +9,13 @@ class A {
         public void showOfB() {
             System.out.println("In B Show");
         }
-    }
+    } // Compiled class file looks like : A$DependentOnA.class
 
     static class AnotherDependentOnA {
         public void showOfC() {
             System.out.println("In C Show");
         }
-    }
+    } // Compiled class file looks like : A$AnotherDependentOnA.class
 }
 
 
