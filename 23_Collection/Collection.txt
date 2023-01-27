@@ -1,0 +1,5 @@
+There are 3 different things which sound same : 
+
+1] Collection API 
+2] Collection       -  an Interface
+3] Collections      -  a Class
