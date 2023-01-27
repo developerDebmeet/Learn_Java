@@ -1,0 +1,9 @@
+Thread states
+
+[New]          ----->  Thread thread = new Thread();
+[Runnable]     ----->  thread.start(); notify() <-------------<-----^
+[Running]      ----->  run() method actually getting exe by CPU     |
+[Waiting]      ----->  Thread.sleep(100); or wait() ---------->-----^
+[Dead]         ----->  stop() or finished
+
+A Waiting thread can come back to Runnable state by notify() method

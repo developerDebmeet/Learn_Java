@@ -121,5 +121,18 @@ public class Demo {
 
         // IN this example all the 6 created threads will be running in parallel
 
+
+        /*
+         * Threads and Functions where values are getting modified are not
+         * a good idea, As they can lead to Race Conditions
+         * 
+         * eg 2 threads trying to update the same variable at the very same time
+         * 
+         * In such cases, we should either not use threads or make them Thread Safe
+         * 
+         * Thread Safe eg : There are 2 threads t1,t2 and a function void update()
+         * So if t1 started to execute update(), t2 wont be able to start execution of 
+         * update() until t1 has completed
+         */
     }
 }
