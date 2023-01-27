@@ -74,6 +74,7 @@ public class Demo {
         hi.start();     // Starts a thread and executes the run() method 
         hello.start();  // Starts a thread and executes the run() method
 
+////////////////////////////////////////////////////////////////////////////////////////////
 
         // How to work with Runnable interface? 
         // Create objects
@@ -85,8 +86,40 @@ public class Demo {
         // Start thread and execute the run() method of passed Runnable objects!
         t1.start();
         t2.start();
+////////////////////////////////////////////////////////////////////////////////////////////
 
-        // IN this example all the 4 created threads would be running in parallel
+        // Using Anonymous
+        Runnable runnable = new Runnable() {
+            public void run() {
+                for(int i = 0; i < 100; i++) {
+                    System.out.println("Running via Runnable :]");
+                    try {
+                        Thread.sleep(10);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        };
+        //runnable.run(); // Use this OR
+        Thread thread = new Thread(runnable);
+        thread .start(); // This also works
+////////////////////////////////////////////////////////////////////////////////////////////
+
+        // Using Lambda since Runnable is a Functional Interface
+        Runnable runnable2 = () -> {
+            for(int i = 0; i < 100; i++) {
+                System.out.println("Running via Runnable --{Lambda}-- :]");
+                try {
+                    Thread.sleep(10);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+        runnable2.run();
+
+        // IN this example all the 6 created threads will be running in parallel
 
     }
 }
