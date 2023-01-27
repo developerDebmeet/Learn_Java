@@ -1,4 +1,10 @@
 Error types
 1] Compile Time Errors
-2] Run Time Errors
+2] Run Time Errors ->   These are critical. They stop the program execution in between. 
+                        These are called exceptions and they need to be handled to keep the program running even after they happen.
+                        Eg : ArrayIndexOutOfBounds, Null ptr, Trying to open a file which does not exist.
+                        Eg of Avoiding exceptions : First check file exists or not, and then trying to open the file OR Checking if denominator is 0 before division.
 3] Logical Errors
+
+Exception vs Error : Exceptions are somethings that we can and should handle, whereas Errors cannot be handled
+                     Nothing can be done when Error happens.
