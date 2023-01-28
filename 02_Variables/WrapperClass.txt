@@ -1,0 +1,8 @@
+There are some use cases in java, where only objects can do the job.
+So for all primitive data types in java, we also have some Wrapper classes
+
+int    -> Integer
+char   -> Character
+double -> Double
+etc...
+
